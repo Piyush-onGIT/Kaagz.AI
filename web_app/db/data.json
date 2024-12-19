@@ -1,0 +1,17 @@
+[
+   {
+      "type": "issuing_auth",
+      "email": "ia@gmail.com",
+      "password": "123"
+   },
+   {
+      "type": "verifying_auth",
+      "email": "va@gmail.com",
+      "password": "123"
+   },
+   {
+      "type": "individual",
+      "email": "i@gmail.com",
+      "password": "123"
+   }
+]

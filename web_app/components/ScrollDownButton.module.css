@@ -1,0 +1,52 @@
+/* Scroll button container */
+.scroll-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Scroll button styling */
+.scroll-button {
+  background-color: #0056b3;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: moveUpDown 1.5s infinite ease-in-out;
+  transition: transform 0.3s, background-color 0.3s ease-in-out;
+}
+
+.scroll-button:hover {
+  background-color: #004494;
+  transform: scale(1.1);
+}
+
+/* Scroll icon */
+.scroll-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+/* Up and down animation */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
